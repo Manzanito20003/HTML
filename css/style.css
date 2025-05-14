@@ -2363,6 +2363,7 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+
 .btn-primary {
   color: #212529;
   background-color: #F9A392;
@@ -9510,12 +9511,30 @@ h6,
 .back-to-top {
   position: fixed;
   display: none;
-  right: 30px;
-  bottom: 30px;
+  
   z-index: 11;
   animation: action 1s infinite alternate;
 }
+.whatsapp-float {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 11;
+  background-color: #25D366;
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: action 1s infinite alternate;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+}
 @keyframes action {
   0% {
     transform: translateY(0);
